@@ -1,9 +1,7 @@
 name: Crowdin Action
 
 on:
-  push:
-    branches: [ crowdinGithubAction ]
-  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: write
