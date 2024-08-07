@@ -3,6 +3,7 @@ name: Crowdin Action
 on:
   push:
     branches: [ crowdinGithubAction ]
+  pull_request:
 
 permissions:
   contents: write
