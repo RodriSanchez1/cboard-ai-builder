@@ -1,7 +1,8 @@
-name: Crowdin Action
+name: Crowdin download translations
 
 on:
   workflow_dispatch:
+  pull_request:
 
 permissions:
   contents: write
