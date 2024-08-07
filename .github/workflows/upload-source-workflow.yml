@@ -5,7 +5,7 @@ on:
     paths: ['src/intl/cbuilder.json']
     branches: [ crowdinGithubAction ]
   pull_request:
-    branches: [ crowdinGithubAction ]
+
 
 jobs:
   crowdin-upload-sources:
