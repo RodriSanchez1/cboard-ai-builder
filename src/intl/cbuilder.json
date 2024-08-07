@@ -89,6 +89,7 @@
     "application": "Application",
     "language": "Language",
     "signOut": "Sign out",
-    "lol": "lol"
+    "lol": "lol",
+    "darkMode": "Dark mode"
   }
 }
