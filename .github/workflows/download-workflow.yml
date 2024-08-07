@@ -2,7 +2,6 @@ name: Crowdin download translations
 
 on:
   workflow_dispatch:
-  pull_request:
 
 permissions:
   contents: write
@@ -14,6 +13,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Pre-translate
+        uses: crowdin/github-action@v2
+        with:
+          command: 'pre-translate'
+          command_args: '--method mt --file cbuilder/src/intl/cbuilder.json --verbose'
 
       - name: Synchronize with Crowdin
         uses: crowdin/github-action@v2
