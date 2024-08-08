@@ -1,3 +1,2 @@
-const fs = require('fs');
-const supportedLocales = require('./intl.constants').supportedLocales;
+import { supportedLocales } from './intl.constants';
 console.log(supportedLocales.join(','));
