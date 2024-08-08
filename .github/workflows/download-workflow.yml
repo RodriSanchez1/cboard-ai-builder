@@ -18,7 +18,7 @@ jobs:
       - name: Get Supported Locales
         id: get_locales
         run: |
-          supportedLocales=$(node src/intl/getSupportedLocales.js)
+          supportedLocales=$(npx ts-node src/intl/getSupportedLocales.ts)
           echo "supportedLocales=$supportedLocales" >> $GITHUB_ENV
 
       - name: Pre-translate
