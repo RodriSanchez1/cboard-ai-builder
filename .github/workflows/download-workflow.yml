@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  crowdin:
+  pre_translate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,6 +23,13 @@ jobs:
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+  create_pr:
+    runs-on: ubuntu-latest
+    needs: pre_translate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Synchronize with Crowdin
         uses: crowdin/github-action@v2
