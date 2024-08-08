@@ -1,4 +1,4 @@
-name: Crowdin download translations
+name: Download Crowdin translations
 
 on:
   workflow_dispatch:
