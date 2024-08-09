@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Compile intl TypeScript files
-        run: npx -p typescript tsc --project src/intl/intl.json
+        run: npx -p typescript tsc --project src/intl/intl.ts-config.json
 
       - name: Get Supported Locales
         id: get_locales
