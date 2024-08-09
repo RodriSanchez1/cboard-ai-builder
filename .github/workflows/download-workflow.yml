@@ -28,7 +28,16 @@ jobs:
         uses: crowdin/github-action@v2
         with:
           command: 'language list'
-          command_args: ''
+          command_args: '--code locale'
+        env:
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+
+      - name: Supported locales
+        uses: crowdin/github-action@v2
+        with:
+          command: 'language list'
+          command_args: '--code two_letters_code'
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
