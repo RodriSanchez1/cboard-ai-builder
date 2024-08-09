@@ -3,9 +3,8 @@ name: Upload source file to Crowdin
 on:
   push:
     paths: ['src/intl/cbuilder.json']
-    branches: [ crowdinGithubAction ]
-  pull_request:
-
+    # branches: [ main ]
+  # pull_request:
 
 jobs:
   crowdin-upload-sources:
