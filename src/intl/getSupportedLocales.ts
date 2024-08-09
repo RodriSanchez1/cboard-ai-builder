@@ -1,2 +1,3 @@
-const supportedLocales = require('./intl.constants').supportedLocales;
-console.log(supportedLocales.join(','));
+import { supportedLocales } from './intl.constants';
+const result = supportedLocales.map((locale) => `-l ${locale}`).join(' ');
+console.log(result);
