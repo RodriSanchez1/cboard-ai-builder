@@ -1,6 +1,7 @@
 import {
   supportedLocales,
   mapSupportedLocalesToCrowdinLanguageCodes,
+  defaultLocale,
 } from '../intl.constants';
 
 const result = supportedLocales
@@ -10,7 +11,7 @@ const result = supportedLocales
         `The locale "${locale}" is not supported by Crowdin. Please add it to the "mapSupportedLocalesToCrowdinLanguageCodes" object in "src/intl/intl.constants.ts".`,
       );
     }
-    if (locale === 'en-US') {
+    if (locale === defaultLocale) {
       return '';
     }
 
