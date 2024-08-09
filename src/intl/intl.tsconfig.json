@@ -10,5 +10,5 @@
     "skipLibCheck": true,
     "strict": true
   },
-  "files": ["./intl.constants.ts", "./getSupportedLocales.ts"]
+  "files": ["./intl.constants.ts", "./scripts/getSupportedLocales.ts"]
 }
