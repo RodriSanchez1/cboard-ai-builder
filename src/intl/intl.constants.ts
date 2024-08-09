@@ -1,4 +1,4 @@
-export const supportedLocales = ['en-US', 'pt-BR', 'es-ES', 'fr-FR'];
+export const supportedLocales = ['en-US', 'pt-BR', 'es-ES', 'fr-FR', 'it-IT'];
 
 export const defaultLocale = 'en-US';
 
@@ -11,4 +11,5 @@ export const mapSupportedLocalesToCrowdinLanguageCodes: Record<string, string> =
     'pt-BR': 'pt-BR',
     'es-ES': 'es-ES',
     'fr-FR': 'fr',
+    'it-IT': 'it',
   };
