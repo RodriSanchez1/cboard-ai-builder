@@ -10,6 +10,9 @@ const result = supportedLocales
         `The locale "${locale}" is not supported by Crowdin. Please add it to the "mapSupportedLocalesToCrowdinLanguageCodes" object in "src/intl/intl.constants.ts".`,
       );
     }
+    if (locale === 'en-US') {
+      return '';
+    }
 
     const crowdinLanguageCode =
       mapSupportedLocalesToCrowdinLanguageCodes[locale];
