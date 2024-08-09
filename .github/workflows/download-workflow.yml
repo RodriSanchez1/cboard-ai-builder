@@ -15,17 +15,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Compile intl TypeScript files
+        run: npx -p typescript tsc --project src/intl/intl.json
+
       - name: Get Supported Locales
         id: get_locales
         run: |
-          supportedLocales=$(npx ts-node src/intl/getSupportedLocales.ts)
+          supportedLocales=$(node src/intl/dist/getSupportedLocales.js)
           echo "supportedLocales=$supportedLocales" >> $GITHUB_ENV
 
       - name: Pre-translate
         uses: crowdin/github-action@v2
         with:
           command: 'pre-translate'
-          command_args: '--method mt -l ${{ env.supportedLocales }} --file cbuilder/src/intl/cbuilder.json --engine-id 502375 --verbose'
+          command_args: '--method mt ${{ env.supportedLocales }} --file cbuilder/src/intl/cbuilder.json --engine-id 502375 --verbose'
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
