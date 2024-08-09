@@ -1,3 +1,8 @@
+//To compile the script run the following command in the terminal:
+//npx -p typescript tsc --project src/intl/intl.ts-config.json
+//To run the script, use the following command:
+//node src/intl/dist/getSupportedLocales.js
+
 import {
   supportedLocales,
   mapSupportedLocalesToCrowdinLanguageCodes,
