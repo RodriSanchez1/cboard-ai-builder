@@ -24,29 +24,11 @@ jobs:
           supportedLocales=$(node src/intl/dist/scripts/getSupportedLocales.js)
           echo "supportedLocales=$supportedLocales" >> $GITHUB_ENV
 
-      - name: Supported locales
-        uses: crowdin/github-action@v2
-        with:
-          command: 'language list'
-          command_args: '--code locale'
-        env:
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-
-      - name: Supported locales
-        uses: crowdin/github-action@v2
-        with:
-          command: 'language list'
-          command_args: '--code two_letters_code'
-        env:
-          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-
       - name: Pre-translate
         uses: crowdin/github-action@v2
         with:
           command: 'pre-translate'
-          command_args: '--method mt -l fr-FR --file cbuilder/src/intl/cbuilder.json --engine-id 502375 --verbose'
+          command_args: '--method mt ${{ env.supportedLocales }} --file cbuilder/src/intl/cbuilder.json --engine-id 502375 --verbose'
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
