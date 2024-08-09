@@ -1,4 +1,4 @@
-import { supportedLocales, defaultLocale } from './intl.constants';
+import { supportedLocales, defaultLocale } from '../intl.constants';
 const result = supportedLocales
   .map((locale) => (locale === defaultLocale ? '' : `-l ${locale}`))
   .join(' ');
