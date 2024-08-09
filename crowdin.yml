@@ -7,8 +7,10 @@
 
 files:
   [
-    'source': '/cbuilder.json',
-    'translation': '/dictionaries/%locale%.json',
-    'dest': '/cbuilder/src/intl/cbuilder.json',
-    'type': 'json',
+    {
+      'source': '/cbuilder.json',
+      'translation': '/dictionaries/%locale%.json',
+      'dest': '/cbuilder/src/intl/cbuilder.json',
+      'type': 'json',
+    },
   ]
