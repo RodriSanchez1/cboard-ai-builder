@@ -1,0 +1,96 @@
+{
+  "Dashboard": {},
+  "History": {
+    "title": "Storico"
+  },
+  "Navbar": {
+    "cboard": "CBoard",
+    "builder": "Costruttore"
+  },
+  "PromptForm": {
+    "rows": "Riga",
+    "columns": "Colonne",
+    "colorScheme": "Schema Colore",
+    "prompt": "Crea una scheda su:",
+    "useAiPictograms": "Usa Pittogrammi AI",
+    "newBoard": "Nuova scheda",
+    "newAACBoard": "Nuova scheda AAC"
+  },
+  "Board": {
+    "InitialContent": {
+      "ai": "AI",
+      "createANewBoard": "Crea una scheda <b>nuova <br></br></b>",
+      "examples": "Esempi",
+      "promptExample1": "Parti del corpo",
+      "promptExample2": "Animali della giungla",
+      "promptExample3": "Cibo italiano"
+    },
+    "BoardContainer": {
+      "exportToCboard": "Esporta in Cboard"
+    },
+    "TileEditor": {
+      "TileEditorDialogActions": {
+        "saveChanges": "Salva modifiche"
+      },
+      "MorePictosButtons": {
+        "search": "Cerca",
+        "generate": "Genera",
+        "searchAccessibility": "Cerca pittogrammi",
+        "generateAccessibility": "Genera pittogrammi"
+      },
+      "PictogramGeneratorFormDialog": {
+        "title": "Usa Pictonizer per generare pittogrammi",
+        "subtitle": "Genera 4 pittogrammi per",
+        "cancelButton": "ANNULLA",
+        "generateButton": "GENERA",
+        "generatingPictogramsTo": "Generazione di 4 pittogrammi a:"
+      },
+      "PictogramSearcher": {
+        "pictogramNotFound": "Pittogramma non trovato",
+        "error": "Errore",
+        "writeKeywordToSearch": "Scrivi una parola chiave per la ricerca",
+        "trySearchingWithAnotherKeywordOrGenerateIt": "Prova a cercare con un'altra parola chiave o generala con il nostro generatore di pittogramma.",
+        "couldNotFetchPictograms": "Non siamo riusciti a recuperare i pittogrammi. Riprova più tardi.",
+        "searchPictogramUsingTextField": "Cerca un pittogramma usando il campo di testo in alto"
+      }
+    }
+  },
+  "SavedData": {
+    "savedBoards": "Schede salvate",
+    "history": "Storico"
+  },
+  "SignIn": {
+    "cboard": "CBoard",
+    "builder": "Costruttore",
+    "sloganTitle": "Veloce e intelligente",
+    "sloganSubtitle": "Crea schede di tile digitando quello che ti serve.",
+    "ai": "AI",
+    "errorMessage": "Qualcosa è andato storto durante l'accesso",
+    "hello": "<unk> Ciao!",
+    "welcome": "Benvenuto nel Costruttore di schede di comunicazione",
+    "loginButton": "ACCEDI",
+    "signUpButton": "SIGN UP",
+    "signInWith": "Accedi con {provider}",
+    "privacyPolicy": "Informativa sulla privacy",
+    "terms": "Termini",
+    "LoginDialog": {
+      "title": "Accedi",
+      "email": "Email",
+      "password": "Password",
+      "loginButton": "ACCEDI",
+      "cancelButton": "ANNULLA",
+      "forgotPassword": "FORGOT PASSWORD?",
+      "errorMessage": "Email o password errate"
+    }
+  },
+  "Settings": {
+    "title": "Impostazioni",
+    "user": "Utente",
+    "application": "Applicazione",
+    "language": "Lingua",
+    "signOut": "Esci",
+    "lol": "lol",
+    "darkMode": "Modalità scura",
+    "test": "domani"
+  }
+}

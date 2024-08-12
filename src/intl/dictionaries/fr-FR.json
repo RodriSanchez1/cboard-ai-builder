@@ -1,0 +1,96 @@
+{
+  "Dashboard": {},
+  "History": {
+    "title": "Historique"
+  },
+  "Navbar": {
+    "cboard": "Tableau",
+    "builder": "Constructeur"
+  },
+  "PromptForm": {
+    "rows": "Lignes",
+    "columns": "Colonnes",
+    "colorScheme": "Schéma de couleurs",
+    "prompt": "Créer un tableau à propos de :",
+    "useAiPictograms": "Utiliser les pictogrammes AI",
+    "newBoard": "Nouveau tableau",
+    "newAACBoard": "Nouvelle carte AAC"
+  },
+  "Board": {
+    "InitialContent": {
+      "ai": "AI",
+      "createANewBoard": "Create a <b>New <br></br> Board</b>",
+      "examples": "Exemples",
+      "promptExample1": "Parties du corps",
+      "promptExample2": "Animaux de la jungle",
+      "promptExample3": "Nourriture italienne"
+    },
+    "BoardContainer": {
+      "exportToCboard": "Exporter vers le Cboard"
+    },
+    "TileEditor": {
+      "TileEditorDialogActions": {
+        "saveChanges": "Enregistrer les modifications"
+      },
+      "MorePictosButtons": {
+        "search": "Chercher",
+        "generate": "Générer",
+        "searchAccessibility": "Recherche de pictogrammes",
+        "generateAccessibility": "Générer des pictogrammes"
+      },
+      "PictogramGeneratorFormDialog": {
+        "title": "Utiliser Pictonizer pour générer des pictogrammes",
+        "subtitle": "Générer 4 pictogrammes pour",
+        "cancelButton": "ANNULER",
+        "generateButton": "GÉNÉRER",
+        "generatingPictogramsTo": "Génération de 4 pictogrammes vers:"
+      },
+      "PictogramSearcher": {
+        "pictogramNotFound": "Pictogramme introuvable",
+        "error": "Erreur",
+        "writeKeywordToSearch": "Écrire un mot clé à rechercher",
+        "trySearchingWithAnotherKeywordOrGenerateIt": "Essayez de rechercher avec un autre mot clé ou générez-le avec notre générateur de pictogrammes.",
+        "couldNotFetchPictograms": "Nous n'avons pas pu récupérer les pictogrammes. Veuillez réessayer plus tard.",
+        "searchPictogramUsingTextField": "Rechercher un pictogramme en utilisant le champ de texte en haut"
+      }
+    }
+  },
+  "SavedData": {
+    "savedBoards": "Tableaux enregistrés",
+    "history": "Historique"
+  },
+  "SignIn": {
+    "cboard": "Tableau",
+    "builder": "Constructeur",
+    "sloganTitle": "Rapide et intelligent",
+    "sloganSubtitle": "Créez des tableaux de tuiles en tapant simplement ce dont vous avez besoin.",
+    "ai": "AI",
+    "errorMessage": "Une erreur s'est produite lors de la connexion",
+    "hello": "Bonjour!",
+    "welcome": "Bienvenue sur le constructeur du tableau de communication",
+    "loginButton": "CONNEXION",
+    "signUpButton": "S'INSCRIRE",
+    "signInWith": "Connectez-vous avec {provider}",
+    "privacyPolicy": "Politique de confidentialité",
+    "terms": "Conditions générales de vente",
+    "LoginDialog": {
+      "title": "Se connecter",
+      "email": "Courriel",
+      "password": "Mot de passe",
+      "loginButton": "CONNEXION",
+      "cancelButton": "ANNULER",
+      "forgotPassword": "OUVRIR MOT DE PASSE ?",
+      "errorMessage": "Courriel ou mot de passe incorrect"
+    }
+  },
+  "Settings": {
+    "title": "Réglages",
+    "user": "Utilisateur",
+    "application": "Application",
+    "language": "Langue",
+    "signOut": "Se déconnecter",
+    "lol": "Lol",
+    "darkMode": "Mode sombre",
+    "test": "demain"
+  }
+}
