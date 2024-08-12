@@ -68,16 +68,16 @@
     "errorMessage": "Algo deu errado durante o login",
     "hello": "Olá!",
     "welcome": "Bem-vindo ao Communication Board Builder",
-    "loginButton": "LOGIN",
+    "loginButton": "Entrar",
     "signUpButton": "INSCRIÇÃO",
     "signInWith": "Entrar com {provider}",
     "privacyPolicy": "Política de privacidade",
     "terms": "Termos",
     "LoginDialog": {
-      "title": "Login",
-      "email": "Email",
+      "title": "Conectar-se",
+      "email": "e-mail",
       "password": "Senha",
-      "loginButton": "LOGIN",
+      "loginButton": "Entrar",
       "cancelButton": "CANCELAR",
       "forgotPassword": "ESQUECEU A SENHA?",
       "errorMessage": "E-mail ou senha incorretos"
@@ -88,6 +88,9 @@
     "user": "Utilizador",
     "application": "Aplicação",
     "language": "Idioma",
-    "signOut": "Sair"
+    "signOut": "Sair",
+    "lol": "lol",
+    "darkMode": "Modo noturno",
+    "test": "tomorrow"
   }
 }

@@ -88,6 +88,9 @@
     "user": "Usuario",
     "application": "Aplicación",
     "language": "Idioma",
-    "signOut": "Cerrar sesión"
+    "signOut": "Cerrar sesión",
+    "lol": "lol",
+    "darkMode": "Modo oscuro",
+    "test": "mañana"
   }
 }
