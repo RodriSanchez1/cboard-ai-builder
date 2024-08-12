@@ -2,7 +2,7 @@ name: Download Crowdin translations
 
 on:
   workflow_dispatch:
-  pull_request:
+  # pull_request:
 
 permissions:
   contents: write
@@ -32,7 +32,6 @@ jobs:
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-          supportedLocales: ''
 
   create_pr:
     runs-on: ubuntu-latest
